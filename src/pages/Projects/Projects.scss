@@ -1,0 +1,31 @@
+.projects {
+  background-color: #f8f9fa;
+}
+
+.project-card {
+  border-radius: 14px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+.time-period {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #495057;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  margin-top: 4px;
+}
+
+/* Optional: subtle hover sync with card */
+.project-card:hover .time-period {
+  background-color: #dee2e6;
+}

@@ -1,0 +1,153 @@
+.student-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.student-image img {
+  width: 140px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.student-content {
+  flex: 1;
+}
+
+.student-name {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.student-name a {
+  margin-left: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.student-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+
+.year-badge {
+  background: #407088;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.guide {
+  font-style: italic;
+}
+
+.research {
+  margin: 0.6rem 0;
+}
+
+.email {
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.keyword {
+  background: #eef2f5;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.socials a {
+  margin-right: 10px;
+  font-size: 1.3rem;
+  color: #235784;
+}
+
+/* ===========================
+   Mobile (≤ 576px)
+=========================== */
+
+@media (max-width: 576px) {
+  .student-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+
+  .student-image img {
+    width: 110px;
+  }
+
+  .student-meta {
+    font-size: 0.8rem;
+  }
+
+  .research {
+    font-size: 0.85rem;
+  }
+
+  .email {
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+
+  .keywords {
+    justify-content: center;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials a {
+    margin: 0 8px;
+  }
+}
+
+/* ===========================
+   Tablet (577px – 991px)
+=========================== */
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .student-card {
+    gap: 1.2rem;
+    padding: 1.4rem;
+  }
+
+  .student-image img {
+    width: 120px;
+  }
+
+  .student-meta {
+    font-size: 0.82rem;
+  }
+
+  .research {
+    font-size: 0.88rem;
+  }
+}

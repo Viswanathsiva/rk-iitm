@@ -1,0 +1,50 @@
+.contact-page {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.contact-box {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.contact-item {
+  margin-bottom: 1.2rem;
+
+  .icon {
+    font-size: 1.4rem;
+    color: #0d6efd;
+    min-width: 36px;
+    margin-top: 4px;
+  }
+
+  h6 {
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+    color: #495057;
+  }
+
+  a {
+    color: #0d6efd;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+iframe {
+  border: none;
+  border-radius: 12px;
+}

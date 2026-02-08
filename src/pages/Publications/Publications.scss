@@ -1,0 +1,54 @@
+.publication {
+  h2 {
+    font-weight: 700;
+    letter-spacing: 0.4px;
+  }
+  .p-accordion-header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .scholar-images {
+    img {
+      width: 70px;
+      height: 70px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .irins-img {
+      width: 180px;
+    }
+
+    img:hover {
+      transform: scale(1.12);
+    }
+  }
+
+  .publication-list {
+    li {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  }
+
+  .publication-list {
+    li {
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+      padding: 10px 12px;
+      border-radius: 8px;
+      transition: background-color 0.2s ease;
+    }
+
+    /* Optional hover highlight */
+    li:hover {
+      background-color: #e9ecef;
+    }
+
+    .pub-authors {
+      font-weight: 400;
+    }
+  }
+}
