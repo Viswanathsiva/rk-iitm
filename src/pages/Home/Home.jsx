@@ -116,15 +116,15 @@ export default function Home() {
           <div className="research-tooltip-target">
             <h3>Research Focus</h3>
             <p>
-              Geomechanics laboratory research focuses on fundamental
-              understanding on the mechanics of purely frictional and
-              transitional geomaterials from particle to continuum level.
+              Research at Geomechanics laboratory is centered on developing a
+              fundamental understanding of the mechanical behavior of purely
+              frictional and transitional geomaterials, spanning scales from
+              individual particles to the continuum level.
             </p>
           </div>
         </OverlayTrigger>
       </section>
 
-      {/* CALL TO ACTION */}
       <section className="cta">
         <p>
           If you find my research interesting and wish to join my group, please

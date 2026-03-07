@@ -13,29 +13,41 @@ export default function About() {
           <strong>
             <em>Ramesh Kannan Kandasami</em>
           </strong>{" "}
-          is an Assistant Professor in the{" "}
-          <strong>Geotechnical Engineering</strong> division, Department of
-          Civil Engineering, IIT Madras. Prior to joining this institute, he was
-          working as a post-doctoral research associate with the Geotechnical
-          Research Group at the Schofield centre, University of Cambridge (UoC).
-          His research at Cambridge involved fundamental understanding on the
-          mechanics of hydraulic fracturing in soft rocks and wellbore
-          strengthening. This research project was funded by British Petroleum -
-          International Centre for Advanced Materials (BP-ICAM). He completed
-          his Ph.D. at the Indian Institute of Science (IISc) where he worked
-          extensively on understanding the mechanics of cohesive-frictional
-          granular materials through comprehensive characterization and material
-          modelling. Ramesh's work focusses on fundamental understanding on the
-          mechanics of frictional and transitional geomaterials from particulate
-          to continuum level which will eventually lead to better engineer
-          intricate geo-systems.
+          is an Associate Professor in the{" "}
+          <strong>Geotechnical Engineering Group</strong>, Department of Civil
+          Engineering, IIT Madras. Prior to joining IIT Madras, he served as a
+          Postdoctoral Research Associate with the Geotechnical Research Group
+          at the Schofield Centre, University of Cambridge. At Cambridge, his
+          research focused on developing a fundamental understanding of
+          hydraulic fracturing in soft rocks and wellbore strengthening, under a
+          project funded by the British Petroleum – International Centre for
+          Advanced Materials (BP-ICAM).
+        </p>
+
+        <p>
+          Ramesh Kannan earned his Ph.D. from the Indian Institute of Science
+          (IISc), where his work centered on the mechanics of
+          cohesive–frictional granular materials through comprehensive
+          experimental characterization and advanced material modeling.
+        </p>
+
+        <p>
+          His current research is centered on advancing the understanding of the
+          mechanical behavior of transitional geomaterials across multiple
+          length scales. His laboratory is engaged in the development of
+          state-of-the-art constitutive models, advanced experimental
+          methodologies, and robust numerical solvers to address complex
+          challenges in geomechanics. His research adopts a multi-physical and
+          multi-scale perspective, with primary focus areas including the
+          mechanics of gas hydrate–bearing sediments, CO₂ sequestration, ballast
+          breakage, soil liquefaction, and risk-based assessment of dam safety.
         </p>
 
         <a
           href="https://civil.iitm.ac.in/faculty/rameshkk/"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-primary"
+          className="btn btn-primary mt-2"
         >
           View IIT Madras Faculty Profile
         </a>

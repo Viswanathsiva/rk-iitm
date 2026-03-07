@@ -86,7 +86,7 @@ export default function Teaching() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Syllabus <i className="pi pi-external-link" />
+              View / Download Syllabus <i className="pi pi-external-link" />
             </a>
             <ul>
               <li>Introduction to geotechnical engineering</li>
@@ -110,7 +110,7 @@ export default function Teaching() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Syllabus <i className="pi pi-external-link" />
+              View / Download Syllabus <i className="pi pi-external-link" />
             </a>
             <ul>
               <li>Analysis of state of stress in soil</li>
@@ -139,7 +139,7 @@ export default function Teaching() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Syllabus <i className="pi pi-external-link" />
+              View / Download Syllabus <i className="pi pi-external-link" />
             </a>
             <ul>
               <li>Introduction to earthern structures</li>
@@ -176,7 +176,7 @@ export default function Teaching() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Syllabus <i className="pi pi-external-link" />
+              View / Download Syllabus <i className="pi pi-external-link" />
             </a>
             <ul>
               <li>Revisiting fundamental tenets of soil behaviour</li>
@@ -227,7 +227,7 @@ export default function Teaching() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View/Download Syllabus <i className="pi pi-external-link" />
+              View / Download Syllabus <i className="pi pi-external-link" />
             </a>
           </AccordionTab>
         </Accordion>

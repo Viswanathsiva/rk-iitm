@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { Accordion, AccordionTab } from "primereact/accordion";
 import "./Publications.scss";
 import { FaLink } from "react-icons/fa";
-// src/data/publications.js
+import { Badge } from "primereact/badge";
+import { Avatar } from "primereact/avatar";
 
 const scholarProfiles = [
   {
@@ -34,6 +35,46 @@ const scholarProfiles = [
 ];
 
 const journalPublications = [
+  {
+    journalName:
+      'Wani S., Rao M. S., and Kandasami R. K. (2026) "Role of hydrate cementation habits on the geomechanical behavior of hydrate bearing sediments", Engineering Geology,',
+    link: "https://doi.org/10.1016/j.enggeo.2026.108650",
+  },
+  {
+    journalName:
+      'Kumar N., and Kandasami R. K. (2026) "Assessing tensile performance and damage in glasgrid reinforcements using image-based characterization", Geotextiles and Geomembranes, Vol. 54(4), pp. 575-601',
+    link: "",
+  },
+  {
+    journalName:
+      'Kumar J. S., Chaudhuri A., and Kandasami R. K. (2026) "Geomechanical unload‐reload response of cylindrical cavities for wellbore stability", International Journal for Numerical and Analytical Methods in Geomechanics,',
+    link: "https://doi.org/10.1002/nag.70238",
+  },
+  {
+    journalName:
+      'Kumar J. S., and Kandasami R. K. (2025) "Kinetic to capillary flow transition during drilling fluid injection through porous medium", Géotechnique Letters, Vol. 15(4), pp. 289-294',
+    link: "https://doi.org/10.1680/jgele.24.00139",
+  },
+  {
+    journalName:
+      'Kalyan N. S. S. P., Badu P., and Kandasami R. K. (2025) "Complex network and fabric driven non-affine kinematics of aggregate-rubber mixtures", Computers and Geotechnics, Vol. 187, pp. 107436',
+    link: "https://doi.org/10.1016/j.compgeo.2025.107436",
+  },
+  {
+    journalName:
+      'Bandaru B., Kandasami R. K., and Robinson R. G. (2025) "Cementation and pore-filling mechanisms in cement treated low-plastic clays", Acta Geotechnica, Vol. 21(1), pp. 91-116',
+    link: "https://doi.org/10.1007/s11440-025-02760-2",
+  },
+  {
+    journalName:
+      'Wani S., Agarwal I., Bugalia N., and Kandasami R. K. (2025) "Predicting the performance of slurry TBM through marine deposits using machine learning models", Automation in Construction, Vol. 177, pp. 106308',
+    link: "https://doi.org/10.1016/j.autcon.2025.106308",
+  },
+  {
+    journalName:
+      'Rehman M. U., Kandasami R. K., and Banerjee S. (2025) "Simplified approach for liquefaction assessment in granular soils: integrating bulk and grain properties", Granular Matter, Vol. 27(3), pp. 56',
+    link: "https://doi.org/10.1007/s10035-025-01529-4",
+  },
   {
     journalName:
       'Konstantinou C., Kandasami R. K., Biscontin G., and Papanastasiou P. (2025) "Effects of stress state during fluid injection fracturing experiments in weakly cemented porous media", Engineering Fracture Mechanics, Vol. 319, pp. 111016',
@@ -172,7 +213,87 @@ const patents = [
 const conferencePublications = [
   {
     journalName:
-      "Rao M. S., Wani S., and Kandasami R. K. (2024) Effect of hydrate morphology on geomechanical behavior of gas hydrate sediments, Geotechnical Frontiers 2025, pp. 535–544",
+      "Kumar J. S., and Kandasami R. K. (2026) Experimental study on drilling fluid particle migration through porous media, Advances in Rock Mechanics—Infrastructure Development, Proceedings of the 13th Asian Rock Mechanics Symposium (ARMS13)",
+    link: "https://doi.org/10.1007/978-981-95-4259-8_23",
+  },
+  {
+    journalName:
+      "Anwar A., Kalyan N. S. S. P., and Kandasami R. K. (2025) Compaction mechanics of soft-rigid mixtures considering realistic particle morphology, EPJ Web of Conferences, Vol. 340, pp. 07016",
+    link: "https://doi.org/10.1051/epjconf/202534007016",
+  },
+  {
+    journalName:
+      "Manjunath K., Kalyan N. S. S. P., Kandasami R. K., and Banerjee S. (2025) Hydrodynamic forces on particles considering realistic morphologies, EPJ Web of Conferences, Vol. 340, pp. 08003",
+    link: "https://doi.org/10.1051/epjconf/202534008003",
+  },
+  {
+    journalName:
+      "Sebastin C., Kumar J. S., and Kandasami R. K. (2025) Effect of overburden pressure on cylindrical cavity expansion using advanced constitutive models, International Conference of the International Association for Computer Methods and Advances in Geomechanics, pp. 770-777",
+    link: "https://link.springer.com/chapter/10.1007/978-981-95-5969-5_109",
+  },
+  {
+    journalName:
+      "Fukumoto Y., Kalyan N. S. S. P., Kandasami R. K., and Shimbo T. (2025) Fracture and post-fracture modeling of compacted clay soils based on coupled peridynamics-DEM, International Conference of the International Association for Computer Methods and Advances in Geomechanics, pp. 301-309",
+    link: "https://link.springer.com/chapter/10.1007/978-981-95-5969-5_40",
+  },
+  {
+    journalName:
+      "Bandaru B., Robinson R. G., and Kandasami R. K. (2025) Early-age prediction of compressibility in cement-stabilized clays using critical state framework, International Conference of the International Association for Computer Methods and Advances in Geomechanics, pp. 519-525",
+    link: "https://link.springer.com/chapter/10.1007/978-981-95-5969-5_73",
+  },
+  {
+    journalName:
+      "Bandaru B., Kandasami R. K., and Robinson R. G. (2025) Curing stress effects on stabilization of low and high plastic clays in inactive and active zones, GeoVadis, CRC Press, pp. 129-134",
+    link: "https://www.taylorfrancis.com/chapters/oa-edit/10.1201/9781003645931-22/curing-stress-effects-stabilization-low-high-plastic-clays-inactive-active-zones-balaji-bandaru-ramesh-kandasami-robinson",
+  },
+  {
+    journalName:
+      "Kumar N., and Kandasami R. K. (2025) Evaluation of mechanical degradation to glasgrid under cyclic loading during installation in roads, GeoVadis, CRC Press, pp. 651-656",
+    link: "https://www.taylorfrancis.com/chapters/oa-edit/10.1201/9781003645917-101/evaluation-mechanical-degradation-glasgrid-cyclic-loading-installation-roads-nitish-kumar-ramesh-kannan-kandasami",
+  },
+  {
+    journalName:
+      "Wani S., and Kandasami R. K. (2025) Parametric analysis and modeling of gas hydrate sediment behavior, GeoVadis, CRC Press, pp. 136-141",
+    link: "https://www.taylorfrancis.com/chapters/oa-edit/10.1201/9781003645917-19/parametric-analysis-modeling-gas-hydrate-sediment-behavior-wani-kannan",
+  },
+  {
+    journalName:
+      "Rehman M. U., Kandasami R. K., and Banerjee S. (2025) Packing index as a novel measure for estimating the liquefaction resistance in granular soils, GeoVadis, CRC Press, pp. 351-356",
+    link: "https://www.taylorfrancis.com/chapters/oa-edit/10.1201/9781003645917-53/packing-index-novel-measure-estimating-liquefaction-resistance-granular-soils-rehman-kandasami-banerjee",
+  },
+  {
+    journalName:
+      "Rao M. S., Wani S., and Kandasami R. K. (2025) Mechanical characterization of hydrate-bearing sediments using multistage triaxial testing, 3rd International Conference on Energy Geotechnics 2025",
+    link: "https://hal.science/hal-05344006/document",
+  },
+  {
+    journalName:
+      "Pulaganti N. and Kandasami R. K. (2025) Particle gradation and relative density governing the pore constriction size, Soil Dynamics and Computational Geomechanics: Select Proceedings of 8IYGEC 2021, pp. 221",
+    link: "https://doi.org/10.1007/978-981-96-1368-7",
+  },
+  {
+    journalName:
+      "Kalyan N. S. S. P., Badu P., and Kandasami R. K. (2025) Numerical study on the influence of rubber content on the mechanical behaviour of angular aggregates, IOP Conference Series: Earth and Environmental Science, Vol. 1480(1), pp. 012058",
+    link: "https://iopscience.iop.org/article/10.1088/1755-1315/1480/1/012058/meta",
+  },
+  {
+    journalName:
+      "Fukumoto Y., Kalyan N. S. S. P., Kandasami R. K., and Shimbo T. (2025) Coupled peridynamics and DEM with unstructured grid for evaluating the effect of particle morphology on fracture behavior, IOP Conference Series: Earth and Environmental Science, Vol. 1480(1), pp. 012036",
+    link: "https://iopscience.iop.org/article/10.1088/1755-1315/1480/1/012036/meta",
+  },
+  {
+    journalName:
+      "Kalyan N. S. S. P., Fukumoto Y., and Kandasami R. K. (2025) Geometric effects on particle fragmentation: Numerical perspective from coupled continuum-discrete simulations, IOP Conference Series: Earth and Environmental Science, Vol. 1480(1), pp. 012043",
+    link: "https://iopscience.iop.org/article/10.1088/1755-1315/1480/1/012043/meta",
+  },
+  {
+    journalName:
+      "Kumar J. S., Kalyan N. S. S. P., Lijith K. P., and Kandasami R. K. (2025) Investigations on particle migration during suspension injection through porous medium using x-ray CT, IOP Conference Series: Earth and Environmental Science, Vol. 1480(1), pp. 012013",
+    link: "https://iopscience.iop.org/article/10.1088/1755-1315/1480/1/012013/meta",
+  },
+  {
+    journalName:
+      "Rao M. S., Wani S., and Kandasami R. K. (2025) Effect of hydrate morphology on geomechanical behavior of gas hydrate sediments, Geotechnical Frontiers 2025, pp. 535–544",
     link: "https://doi.org/10.1061/9780784486016.054",
   },
   {
@@ -346,9 +467,19 @@ export default function Publications() {
       </div>
 
       {/* Publications */}
-      <Accordion multiple activeIndex={[0]}>
+      <Accordion multiple>
         <AccordionTab
-          header={`📘 Journal Publications (${journalPublications.length})`}
+          header={
+            <span className="flex align-items-center gap-2 w-full">
+              <span className="font-bold white-space-nowrap">
+                📘 Journal Publications
+              </span>
+              <Badge
+                value={`${journalPublications.length}`}
+                className="ml-auto"
+              />
+            </span>
+          }
         >
           <ol className="publication-list">
             {journalPublications.map((pub, i) => (
@@ -367,7 +498,14 @@ export default function Publications() {
           </ol>
         </AccordionTab>
 
-        <AccordionTab header={`📜 Patents (${patents.length})`}>
+        <AccordionTab
+          header={
+            <span className="flex align-items-center gap-2 w-full">
+              <span className="font-bold white-space-nowrap">📜 Patents</span>
+              <Badge value={`${patents.length}`} className="ml-auto" />
+            </span>
+          }
+        >
           <ol className="publication-list">
             {patents.map((pub, i) => (
               <li key={i} className="">
@@ -386,7 +524,17 @@ export default function Publications() {
         </AccordionTab>
 
         <AccordionTab
-          header={`📑 Conference Publications (${conferencePublications.length})`}
+          header={
+            <span className="flex align-items-center gap-2 w-full">
+              <span className="font-bold white-space-nowrap">
+                📑 Conference Publications
+              </span>
+              <Badge
+                value={`${conferencePublications.length}`}
+                className="ml-auto"
+              />
+            </span>
+          }
         >
           <ol className="publication-list">
             {conferencePublications.map((pub, i) => (

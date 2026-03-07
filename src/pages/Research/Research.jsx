@@ -48,6 +48,10 @@ const imgContents = [
   },
   { img: "sand.jfif", name: "3D Modelling of Soil-Geogrid Interaction" },
   { img: "termite_mound.png", name: "Termite Mound" },
+  {
+    img: "Grid testing.png",
+    name: "Grid testing with advanced imaging techniques",
+  },
 ];
 
 export default function Research() {
@@ -145,6 +149,63 @@ export default function Research() {
           )}
         </Dialog>
 
+        <hr />
+
+        <section className="mt-5">
+          <h2 className="mb-4 text-center">New Simulation Results</h2>
+
+          <div className="row">
+            <div className="col-lg-6 text-center mb-4">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="research-videos-tag"
+              >
+                <source
+                  src="assets\videos\Bespoke Numerical Solver.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <p className="mt-2">Simulation 1</p>
+            </div>
+
+            <div className="col-lg-6 text-center mb-4">
+              <img
+                src="\assets\images\others\State-of-Art Experimental Setup.png"
+                alt="Result 1"
+                className="research-evolution"
+              />
+              <p className="mt-2">Result 1</p>
+            </div>
+
+            <div className="col-lg-6 text-center mb-4">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="research-videos-tag"
+              >
+                <source
+                  src="\assets\videos\Impact Testing of Granular Materials.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <p className="mt-2">Simulation 2</p>
+            </div>
+
+            <div className="col-lg-6 text-center mb-4">
+              <img
+                src="\assets\images\others\State-of-Art Experimental Setup.png"
+                alt="Result 2"
+                className="research-evolution"
+              />
+              <p className="mt-2">Result 2</p>
+            </div>
+          </div>
+        </section>
         <hr />
 
         {/* ===============================
