@@ -26,7 +26,7 @@ export default function Contact() {
     <section className="contact-page py-5">
       <div className="container">
         {/* Office */}
-        <h2 className="section-title">Office and Geo-Mechanics Laboratory</h2>
+        <h2 className="section-title">Office and Geomechanics Laboratory</h2>
 
         <div className="row contact-box">
           <div className="col-md-6 p-4">

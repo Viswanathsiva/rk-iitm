@@ -8,7 +8,7 @@ export default function About() {
   return (
     <main className="about-page">
       {/* BIO SECTION */}
-      <section className="about-bio card">
+      <section className="about-bio card text-justify">
         <p>
           <strong>
             <em>Ramesh Kannan Kandasami</em>
@@ -76,7 +76,7 @@ export default function About() {
 
           <TimelineItem
             title="Post Doctoral Research Associate"
-            institute="University of Cambridge, United Kingdom"
+            institute="University of Cambridge, Cambridgeshire, United Kingdom"
             period="2017 – 2019"
             logo="/assets/images/Universities/UoC.png"
             link="http://www.eng.cam.ac.uk/"
@@ -84,7 +84,7 @@ export default function About() {
 
           <TimelineItem
             title="Senior Research Associate"
-            institute="Indian Institute of Science, Bangalore"
+            institute="Indian Institute of Science, Bangalore, India"
             period="2016 – 2017"
             logo="/assets/images/Universities/IISC.png"
             link="https://www.iisc.ac.in/"

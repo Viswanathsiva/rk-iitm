@@ -68,11 +68,17 @@
 }
 
 /* ---------- VIDEOS ---------- */
+.research-videos {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
 .research-videos video {
   width: 100%;
   max-width: 420px;
   border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .research-videos p {
@@ -87,9 +93,9 @@
 }
 
 /* ---------- EVOLUTION VIDEOS ---------- */
-.research-evolution {
+.research-evolution,
+.research-videos-tag {
   width: 100%;
-  max-width: 480px;
   border-radius: 18px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }

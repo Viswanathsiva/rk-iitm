@@ -24,13 +24,13 @@ export default function Home() {
 
           <p className="affiliation">
             Department of Civil Engineering <br />
-            Indian Institute of Technology - Madras
+            Indian Institute of Technology Madras
           </p>
 
           <div className="contact-info">
             <p>📍 Room No: 121, Building Science Block</p>
             <p>📞 044-22574259</p>
-            <p>✉️ rameshkk@iitm.ac.in</p>
+            <p>✉️ rameshkk@iitm.ac.in | rameshkk@civil.iitm.ac.in</p>
           </div>
 
           <div className="scholar-images">

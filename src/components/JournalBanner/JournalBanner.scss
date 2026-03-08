@@ -1,0 +1,33 @@
+.journal-banner {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.journal-track {
+  display: flex;
+  gap: 2px;
+  width: max-content;
+  animation: scrollBanner 125s linear infinite;
+}
+
+.journal-track img {
+  height: 180px;
+  width: auto;
+  //   border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.journal-track img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scrollBanner {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

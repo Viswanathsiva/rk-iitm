@@ -4,7 +4,7 @@ import { SiGooglescholar, SiResearchgate } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaLink } from "react-icons/fa";
 
-const StudentCard = ({ student, imageBasePath }) => {
+const StudentCard = ({ student }) => {
   const {
     name,
     image,
@@ -34,15 +34,12 @@ const StudentCard = ({ student, imageBasePath }) => {
       <div className="student-card ">
         {/* Image */}
         <div className="student-image flex align-items-center">
-          <img
-            src={`/assets/images/students/${imageBasePath}/${image}`}
-            alt={name}
-          />
+          <img src={`/assets/images/students/${image}`} alt={name} />
         </div>
 
         {/* Content */}
         <div className="student-content">
-          <h4 className="student-name">
+          <h4 className="student-name flex align-items-center">
             {name}
             {profileLink && (
               <a href={profileLink} target="_blank" rel="noreferrer">
@@ -54,10 +51,10 @@ const StudentCard = ({ student, imageBasePath }) => {
           <div className="student-meta">
             <FaGraduationCap />
             <span>{degree}</span>
-            <span className="year-badge">{year}</span>
+            <span className="year-badge bg-success">{year}</span>
             {isPrimaryGuidePresent && guideName && (
-              <span className="guide">
-                <FaUserTie /> {guideName}
+              <span className="guide flex gap-2 align-items-center ">
+                <b>Primary Guide: </b> <FaUserTie /> {guideName}
               </span>
             )}
           </div>

@@ -152,66 +152,91 @@ export default function Research() {
         <hr />
 
         <section className="mt-5">
-          <h2 className="mb-4 text-center">New Simulation Results</h2>
+          <h2 className="mb-4">Research Capabilities</h2>
 
-          <div className="row">
-            <div className="col-lg-6 text-center mb-4">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="research-videos-tag"
-              >
-                <source
-                  src="assets\videos\Bespoke Numerical Solver.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <p className="mt-2">Simulation 1</p>
-            </div>
-
-            <div className="col-lg-6 text-center mb-4">
-              <img
-                src="\assets\images\others\State-of-Art Experimental Setup.png"
-                alt="Result 1"
-                className="research-evolution"
+          <div className="text-center mb-4">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="research-videos-tag"
+            >
+              <source
+                src="assets\videos\Bespoke Numerical Solver.mp4"
+                type="video/mp4"
               />
-              <p className="mt-2">Result 1</p>
-            </div>
+            </video>
+            {/* <p className="mt-2">Simulation 1</p> */}
+          </div>
 
-            <div className="col-lg-6 text-center mb-4">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="research-videos-tag"
-              >
-                <source
-                  src="\assets\videos\Impact Testing of Granular Materials.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <p className="mt-2">Simulation 2</p>
-            </div>
+          <div className="text-center mb-4">
+            <img
+              src="\assets\images\others\State of Art Experimental Setup.png"
+              alt="State-of-Art Experimental Setup"
+              className="research-evolution"
+            />
+            {/* <p className="mt-2">Result 1</p> */}
+          </div>
 
-            <div className="col-lg-6 text-center mb-4">
-              <img
-                src="\assets\images\others\State-of-Art Experimental Setup.png"
-                alt="Result 2"
-                className="research-evolution"
+          <div className="text-center mb-4">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="research-videos-tag"
+            >
+              <source
+                src="\assets\videos\Impact Testing of Granular Materials.mp4"
+                type="video/mp4"
               />
-              <p className="mt-2">Result 2</p>
-            </div>
+            </video>
+            {/* <p className="mt-2">Simulation 2</p> */}
+          </div>
+
+          <div className="text-center mb-4">
+            <img
+              src="\assets\images\others\Physical Model Testing Laboratory.png"
+              alt="Physical Model Testing Laboratory"
+              className="research-evolution"
+            />
+            {/* <p className="mt-2">Result 2</p> */}
+          </div>
+          <div className="text-center mb-4">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="research-videos-tag"
+            >
+              <source src="\assets\videos\THMC Solver.mp4" type="video/mp4" />
+            </video>
+            {/* <p className="mt-2">Simulation 2</p> */}
+          </div>
+          <div className="text-center mb-4">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="research-videos-tag"
+            >
+              <source
+                src="\assets\videos\Fluid Injection.mp4"
+                type="video/mp4"
+              />
+            </video>
+            {/* <p className="mt-2">Simulation 2</p> */}
           </div>
         </section>
-        <hr />
+        {/* <hr /> */}
 
         {/* ===============================
             Research Videos
            =============================== */}
-        <div className="research-videos">
+        {/* <div className="research-videos">
           <div className="row mt-4">
             <div className="col-lg-6 text-center">
               <video className="research-videos-tag" autoPlay loop muted>
@@ -259,12 +284,12 @@ export default function Research() {
           </h5>
         </div>
 
-        <hr />
+        <hr /> */}
 
         {/* ===============================
             Evolution Videos
            =============================== */}
-        <div className="row research-videos mt-4">
+        {/* <div className="row research-videos mt-4">
           <div className="col-lg-6 text-center py-3">
             <video className="research-evolution" autoPlay loop muted>
               <source
@@ -286,7 +311,7 @@ export default function Research() {
           <h5 className="text-center mt-3">
             Fluid Induced Instabilities / Fingering in Granular Medium
           </h5>
-        </div>
+        </div> */}
       </div>
     </div>
   );

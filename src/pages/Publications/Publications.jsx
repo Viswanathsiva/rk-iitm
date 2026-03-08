@@ -4,6 +4,7 @@ import "./Publications.scss";
 import { FaLink } from "react-icons/fa";
 import { Badge } from "primereact/badge";
 import { Avatar } from "primereact/avatar";
+import JournalBanner from "../../components/JournalBanner/JournalBanner";
 
 const scholarProfiles = [
   {
@@ -37,7 +38,7 @@ const scholarProfiles = [
 const journalPublications = [
   {
     journalName:
-      'Wani S., Rao M. S., and Kandasami R. K. (2026) "Role of hydrate cementation habits on the geomechanical behavior of hydrate bearing sediments", Engineering Geology,',
+      'Wani S., Rao M. S., and Kandasami R. K. (2026) "Role of hydrate cementation habits on the geomechanical behavior of hydrate bearing sediments", Engineering Geology, Vol. 365, pp. 108650',
     link: "https://doi.org/10.1016/j.enggeo.2026.108650",
   },
   {
@@ -211,6 +212,16 @@ const patents = [
 ];
 
 const conferencePublications = [
+  {
+    journalName:
+      "Rao M. S., Wani S., and Kandasami R. K. (2026) Influence of effective confinement pressure on geomechanical characteristics of hydrate-bearing sediments, Geo-Congress 2026, pp. 433-442",
+    link: "https://doi.org/10.1061/9780784486719.044",
+  },
+  {
+    journalName:
+      "Bandaru B., Robinson R. G., and Kandasami R. K. (2026) Influence of cement dosage and plasticity on the stiffness of stabilised clays: classification and mechanical response, Geo-Congress 2026, pp. 496-501",
+    link: "https://doi.org/10.1061/9780784486764.049",
+  },
   {
     journalName:
       "Kumar J. S., and Kandasami R. K. (2026) Experimental study on drilling fluid particle migration through porous media, Advances in Rock Mechanics—Infrastructure Development, Proceedings of the 13th Asian Rock Mechanics Symposium (ARMS13)",
@@ -466,6 +477,7 @@ export default function Publications() {
         </div>
       </div>
 
+      <JournalBanner />
       {/* Publications */}
       <Accordion multiple>
         <AccordionTab
