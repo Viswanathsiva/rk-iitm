@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <PrimeReactProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/rameshkk">
           <ScrollToTop />
           <div className="page-wrapper">
             <Header />
