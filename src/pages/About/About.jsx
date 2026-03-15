@@ -62,7 +62,7 @@ export default function About() {
             title="Associate Professor"
             institute="IIT Madras, Chennai, India"
             period="2025 – Present"
-            logo="/assets/images/Universities/IITM.png"
+            logo="assets/images/Universities/IITM.png"
             link="https://www.iitm.ac.in/"
           />
 
@@ -70,7 +70,7 @@ export default function About() {
             title="Assistant Professor"
             institute="IIT Madras, Chennai, India"
             period="2019 – 2025"
-            logo="/assets/images/Universities/IITM.png"
+            logo="assets/images/Universities/IITM.png"
             link="https://www.iitm.ac.in/"
           />
 
@@ -78,7 +78,7 @@ export default function About() {
             title="Post Doctoral Research Associate"
             institute="University of Cambridge, Cambridgeshire, United Kingdom"
             period="2017 – 2019"
-            logo="/assets/images/Universities/UoC.png"
+            logo="assets/images/Universities/UoC.png"
             link="http://www.eng.cam.ac.uk/"
           />
 
@@ -86,7 +86,7 @@ export default function About() {
             title="Senior Research Associate"
             institute="Indian Institute of Science, Bangalore, India"
             period="2016 – 2017"
-            logo="/assets/images/Universities/IISC.png"
+            logo="assets/images/Universities/IISC.png"
             link="https://www.iisc.ac.in/"
           />
         </div>
@@ -101,7 +101,7 @@ export default function About() {
             institute="Indian Institute of Science (IISc)"
             degree="Ph.D. – Geotechnical Engineering"
             period="2010 – 2016"
-            logo="/assets/images/Universities/IISC.png"
+            logo="assets/images/Universities/IISC.png"
             link="https://www.iisc.ac.in/"
           />
 
@@ -109,7 +109,7 @@ export default function About() {
             institute="Indian Institute of Technology Delhi (IITD)"
             degree="M.Tech – Rock Mechanics & Underground Structures"
             period="2008 – 2010"
-            logo="/assets/images/Universities/IITD.png"
+            logo="assets/images/Universities/IITD.png"
             link="https://home.iitd.ac.in/"
           />
 
@@ -117,7 +117,7 @@ export default function About() {
             institute="M.S.E.C., Anna University"
             degree="B.E. – Civil Engineering"
             period="2003 – 2007"
-            logo="/assets/images/Universities/MSEC.jpg"
+            logo="assets/images/Universities/MSEC.jpg"
             link="https://msec.edu.in/"
           />
         </div>

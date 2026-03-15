@@ -10,28 +10,28 @@ const scholarProfiles = [
   {
     name: "Google Scholar",
     link: "https://scholar.google.co.in/citations?user=D42RIhcAAAAJ&hl=en",
-    img: "/assets/images/scholars/google-scholar-circle.png",
+    img: "assets/images/scholars/google-scholar-circle.png",
   },
   {
     name: "ORCID",
     link: "https://orcid.org/0000-0003-0803-3109",
-    img: "/assets/images/scholars/orcid-circle.png",
+    img: "assets/images/scholars/orcid-circle.png",
   },
   {
     name: "IRINS",
     link: "https://iitm.irins.org/profile/150507",
-    img: "/assets/images/scholars/irins.png",
+    img: "assets/images/scholars/irins.png",
     className: "irins-img",
   },
   {
     name: "ResearchGate",
     link: "https://www.researchgate.net/profile/Ramesh-Kannan-Kandasami",
-    img: "/assets/images/scholars/researchgate-circle.png",
+    img: "assets/images/scholars/researchgate-circle.png",
   },
   {
     name: "Scopus",
     link: "https://www.scopus.com/authid/detail.uri?authorId=55804419900",
-    img: "/assets/images/scholars/scopus-circle.png",
+    img: "assets/images/scholars/scopus-circle.png",
   },
 ];
 

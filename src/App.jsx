@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, useLocation } from "react-router-dom";
+import { BrowserRouter, HashRouter, useLocation } from "react-router-dom";
 import { PrimeReactProvider } from "primereact/api";
 import AppRouter from "./router/AppRouter";
 import Header from "./components/Header/Header";
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <PrimeReactProvider>
-        <BrowserRouter basename="/rameshkk">
+        <HashRouter>
           <ScrollToTop />
           <div className="page-wrapper">
             <Header />
@@ -32,7 +32,7 @@ function App() {
             </main>
             <Footer />
           </div>
-        </BrowserRouter>
+        </HashRouter>
       </PrimeReactProvider>
     </>
   );

@@ -70,7 +70,7 @@ export default function Research() {
   const carouselTemplate = (item) => (
     <div className="research-slide text-center">
       <img
-        src={`/assets/images/others/${item.img}`}
+        src={`assets/images/others/${item.img}`}
         alt={item.name}
         className="w-full clickable-img"
         loading="lazy"
@@ -138,7 +138,7 @@ export default function Research() {
         >
           {activeItem && (
             <img
-              src={`/assets/images/others/${activeItem.img}`}
+              src={`assets/images/others/${activeItem.img}`}
               alt={activeItem.name}
               style={{
                 width: "100%",
@@ -172,7 +172,7 @@ export default function Research() {
 
           <div className="text-center mb-4">
             <img
-              src="\assets\images\others\State of Art Experimental Setup.png"
+              src="assets\images\others\State of Art Experimental Setup.png"
               alt="State-of-Art Experimental Setup"
               className="research-evolution"
             />
@@ -188,7 +188,7 @@ export default function Research() {
               className="research-videos-tag"
             >
               <source
-                src="\assets\videos\Impact Testing of Granular Materials.mp4"
+                src="assets\videos\Impact Testing of Granular Materials.mp4"
                 type="video/mp4"
               />
             </video>
@@ -197,7 +197,7 @@ export default function Research() {
 
           <div className="text-center mb-4">
             <img
-              src="\assets\images\others\Physical Model Testing Laboratory.png"
+              src="assets\images\others\Physical Model Testing Laboratory.png"
               alt="Physical Model Testing Laboratory"
               className="research-evolution"
             />
@@ -211,7 +211,7 @@ export default function Research() {
               playsInline
               className="research-videos-tag"
             >
-              <source src="\assets\videos\THMC Solver.mp4" type="video/mp4" />
+              <source src="assets\videos\THMC Solver.mp4" type="video/mp4" />
             </video>
             {/* <p className="mt-2">Simulation 2</p> */}
           </div>
@@ -224,7 +224,7 @@ export default function Research() {
               className="research-videos-tag"
             >
               <source
-                src="\assets\videos\Fluid Injection.mp4"
+                src="assets\videos\Fluid Injection.mp4"
                 type="video/mp4"
               />
             </video>

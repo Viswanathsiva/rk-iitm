@@ -82,7 +82,7 @@ export default function Teaching() {
           >
             <a
               className="syllabus-link"
-              href="\assets\pdf\Course_Sheet_CV2040_Geotechnical_Engg_2026.pdf"
+              href="assets\pdf\Course_Sheet_CV2040_Geotechnical_Engg_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -106,7 +106,7 @@ export default function Teaching() {
           >
             <a
               className="syllabus-link"
-              href="/assets/pdf/Syllabus_CE3350_Geotechnical_Engineering_II_2023.pdf"
+              href="assets/pdf/Syllabus_CE3350_Geotechnical_Engineering_II_2023.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -135,7 +135,7 @@ export default function Teaching() {
           >
             <a
               className="syllabus-link"
-              href="/assets/pdf/Syllabus_ASM_2021.pdf"
+              href="assets/pdf/Syllabus_ASM_2021.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -172,7 +172,7 @@ export default function Teaching() {
           >
             <a
               className="syllabus-link"
-              href="/assets/pdf/Syllabus_CE6350_Mechanics_and_Constitutive_Modelling_of_Geomaterials_2024.pdf"
+              href="assets/pdf/Syllabus_CE6350_Mechanics_and_Constitutive_Modelling_of_Geomaterials_2024.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -223,7 +223,7 @@ export default function Teaching() {
           >
             <a
               className="syllabus-link"
-              href="/assets/pdf/CE1010_Introduction_to_Civil_Engineering.pdf"
+              href="assets/pdf/CE1010_Introduction_to_Civil_Engineering.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

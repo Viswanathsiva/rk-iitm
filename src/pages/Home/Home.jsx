@@ -12,7 +12,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-left">
           <img
-            src="/assets/images/Dr. Ramesh Kannan K.jpeg"
+            src="assets/images/Dr. Ramesh Kannan K.jpeg"
             alt="Dr. Ramesh Kannan Kandasami"
             className="profile-image"
           />
@@ -41,7 +41,7 @@ export default function Home() {
               aria-label="Google Scholar"
             >
               <img
-                src="/assets/images/scholars/google-scholar-circle.png"
+                src="assets/images/scholars/google-scholar-circle.png"
                 alt="Google Scholar"
                 className="profile-img-sch"
               />
@@ -54,7 +54,7 @@ export default function Home() {
               aria-label="ORCID"
             >
               <img
-                src="/assets/images/scholars/orcid-circle.png"
+                src="assets/images/scholars/orcid-circle.png"
                 alt="ORCID"
                 className="profile-img-sch"
               />
@@ -67,7 +67,7 @@ export default function Home() {
               aria-label="IRINS"
             >
               <img
-                src="/assets/images/scholars/irins.png"
+                src="assets/images/scholars/irins.png"
                 alt="IRINS"
                 className="profile-img-sch irins-img"
               />
@@ -80,7 +80,7 @@ export default function Home() {
               aria-label="ResearchGate"
             >
               <img
-                src="/assets/images/scholars/researchgate-circle.png"
+                src="assets/images/scholars/researchgate-circle.png"
                 alt="ResearchGate"
                 className="profile-img-sch"
               />
@@ -93,7 +93,7 @@ export default function Home() {
               aria-label="Scopus"
             >
               <img
-                src="/assets/images/scholars/scopus-circle.png"
+                src="assets/images/scholars/scopus-circle.png"
                 alt="Scopus"
                 className="profile-img-sch scopus-img"
               />

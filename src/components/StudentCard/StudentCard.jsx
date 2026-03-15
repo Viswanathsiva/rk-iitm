@@ -34,7 +34,7 @@ const StudentCard = ({ student }) => {
       <div className="student-card ">
         {/* Image */}
         <div className="student-image flex align-items-center">
-          <img src={`/assets/images/students/${image}`} alt={name} />
+          <img src={`assets/images/students/${image}`} alt={name} />
         </div>
 
         {/* Content */}

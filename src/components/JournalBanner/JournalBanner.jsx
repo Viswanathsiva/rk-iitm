@@ -35,7 +35,7 @@ export default function JournalBanner() {
         {loopImages.map((img, index) => (
           <img
             key={index}
-            src={`/assets/images/Journal_Images/${img}`}
+            src={`assets/images/Journal_Images/${img}`}
             alt="journal"
           />
         ))}
