@@ -3,74 +3,83 @@ import { useState } from "react";
 import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import "./Header.scss";
 
-export default function Header() {
-  const NAV_ITEMS = [
-    { label: "Home", path: "/" },
-    { label: "About", path: "/about" },
-    { label: "Research", path: "/research" },
-    { label: "Teaching", path: "/teaching" },
-    { label: "Publications", path: "/publications" },
-    {
-      label: "Team",
-      dropdown: true,
-      children: [
-        { label: "Current", path: "/active-members" },
-        { label: "Alumni", path: "/alumni" },
-      ],
-    },
-    { label: "Projects", path: "/projects" },
-    { label: "Contact", path: "/contact" },
-  ];
+const NAV_ITEMS = [
+  { label: "Home", path: "/" },
+  { label: "About", path: "/about" },
+  { label: "Research", path: "/research" },
+  { label: "Teaching", path: "/teaching" },
+  { label: "Publications", path: "/publications" },
+  {
+    label: "Team",
+    children: [
+      { label: "Current", path: "/active-members" },
+      { label: "Alumni", path: "/alumni" },
+    ],
+  },
+  { label: "Projects", path: "/projects" },
+  { label: "Contact", path: "/contact" },
+];
 
-  const [mobileMenu, setMobileMenu] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(false);
+export default function Header() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
+  const toggleMobile = () => {
+    setMobileOpen(!mobileOpen);
+    setActiveDropdown(null);
+  };
+
+  const closeMenus = () => {
+    setMobileOpen(false);
+    setActiveDropdown(null);
+  };
+
+  const toggleDropdown = (label) => {
+    setActiveDropdown(activeDropdown === label ? null : label);
+  };
 
   return (
     <header className="rk-header">
       <div className="rk-container">
-        <NavLink to="/" className="logo">
+        <NavLink to="/" className="logo" onClick={closeMenus}>
           Geomechanics <span>Laboratory</span>
         </NavLink>
 
-        {/* Mobile Menu Icon */}
-        <div
-          className="menu-toggle"
-          onClick={() => {
-            setMobileMenu(!mobileMenu);
-            setOpenDropdown(false);
-          }}
-        >
-          {mobileMenu ? <FiX /> : <FiMenu />}
-        </div>
+        <button className="menu-toggle" onClick={toggleMobile}>
+          {mobileOpen ? <FiX /> : <FiMenu />}
+        </button>
 
-        <nav className={`nav-links ${mobileMenu ? "open" : ""}`}>
+        <nav className={`nav ${mobileOpen ? "open" : ""}`}>
           {NAV_ITEMS.map((item) =>
-            item.dropdown ? (
+            item.children ? (
               <div
-                key={item.label}
                 className="dropdown"
-                onMouseEnter={() => !mobileMenu && setOpenDropdown(true)}
-                onMouseLeave={() => !mobileMenu && setOpenDropdown(false)}
+                key={item.label}
+                onMouseEnter={() =>
+                  !mobileOpen && setActiveDropdown(item.label)
+                }
+                onMouseLeave={() => !mobileOpen && setActiveDropdown(null)}
               >
-                <span
-                  className="dropdown-title"
-                  onClick={() => mobileMenu && setOpenDropdown(!openDropdown)}
+                <button
+                  className="dropdown-trigger"
+                  onClick={() => mobileOpen && toggleDropdown(item.label)}
                 >
                   {item.label}
                   <FiChevronDown
-                    className={`dropdown-icon ${openDropdown ? "rotate" : ""}`}
+                    className={activeDropdown === item.label ? "rotate" : ""}
                   />
-                </span>
+                </button>
 
-                <div className={`dropdown-menu ${openDropdown ? "show" : ""}`}>
+                <div
+                  className={`dropdown-menu ${
+                    activeDropdown === item.label ? "show" : ""
+                  }`}
+                >
                   {item.children.map((child) => (
                     <NavLink
                       key={child.path}
                       to={child.path}
-                      onClick={() => {
-                        setMobileMenu(false);
-                        setOpenDropdown(false);
-                      }}
+                      onClick={closeMenus}
                     >
                       {child.label}
                     </NavLink>
@@ -78,14 +87,7 @@ export default function Header() {
                 </div>
               </div>
             ) : (
-              <NavLink
-                key={item.path}
-                to={item.path}
-                onClick={() => {
-                  setMobileMenu(false);
-                  setOpenDropdown(false);
-                }}
-              >
+              <NavLink key={item.path} to={item.path} onClick={closeMenus}>
                 {item.label}
               </NavLink>
             ),

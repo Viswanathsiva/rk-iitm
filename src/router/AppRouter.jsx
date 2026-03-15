@@ -10,6 +10,7 @@ import Publications from "../pages/Publications/Publications";
 import Contact from "../pages/Contact/Contact";
 import ActiveMembers from "../pages/Students/ActiveMembers/ActiveMembers";
 import Alumni from "../pages/Students/Alumni/Alumni";
+import MetricsTracker from "../pages/Admin/MetricsTracker";
 
 export default function AppRouter() {
   return (
@@ -23,6 +24,7 @@ export default function AppRouter() {
       <Route path="/alumni" element={<Alumni />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/metrics" element={<MetricsTracker />} />
     </Routes>
   );
 }

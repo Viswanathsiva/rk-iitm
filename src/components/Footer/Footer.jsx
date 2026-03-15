@@ -1,4 +1,6 @@
 import { FiYoutube, FiTwitter, FiLinkedin } from "react-icons/fi";
+import { SiGoogleanalytics } from "react-icons/si";
+import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 export default function Footer() {
@@ -18,7 +20,6 @@ export default function Footer() {
             href="https://www.youtube.com/channel/UCyrLKDjrxwsYSVlRLfNGi-w"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="YouTube"
           >
             <FiYoutube />
           </a>
@@ -27,7 +28,6 @@ export default function Footer() {
             href="https://twitter.com/rameshkannank"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Twitter"
           >
             <FiTwitter />
           </a>
@@ -36,10 +36,14 @@ export default function Footer() {
             href="https://www.linkedin.com/in/ramesh-kannan-k-2a914120"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn"
           >
             <FiLinkedin />
           </a>
+
+          {/* Metrics Page */}
+          <Link to="/metrics">
+            <SiGoogleanalytics />
+          </Link>
         </div>
       </div>
     </footer>
