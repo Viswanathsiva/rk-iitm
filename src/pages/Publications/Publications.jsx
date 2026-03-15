@@ -44,11 +44,11 @@ const journalPublications = [
   {
     journalName:
       'Kumar N., and Kandasami R. K. (2026) "Assessing tensile performance and damage in glasgrid reinforcements using image-based characterization", Geotextiles and Geomembranes, Vol. 54(4), pp. 575-601',
-    link: "",
+    link: "https://doi.org/10.1016/j.geotexmem.2026.02.007",
   },
   {
     journalName:
-      'Kumar J. S., Chaudhuri A., and Kandasami R. K. (2026) "Geomechanical unload‐reload response of cylindrical cavities for wellbore stability", International Journal for Numerical and Analytical Methods in Geomechanics,',
+      'Kumar J. S., Chaudhuri A., and Kandasami R. K. (2026) "Geomechanical unload‐reload response of cylindrical cavities for wellbore stability", International Journal for Numerical and Analytical Methods in Geomechanics,Vol. 50(5), pp. 2486–2501',
     link: "https://doi.org/10.1002/nag.70238",
   },
   {

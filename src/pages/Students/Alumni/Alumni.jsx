@@ -12,7 +12,7 @@ const alumniStudents = [
       "Discrete–Continuum Modelling of Fracture and Contact in Granular Materials",
     profileLink: "https://pkc137.github.io/sudo_template_website",
     email: "pk90901@hotmail.com",
-    keywords: ["Particle characterization", "µCT", "Contact mechanics"],
+    // keywords: ["Particle characterization", "µCT", "Contact mechanics"],
     affiliation:
       "Research Associate,  École Polytechnique Fédérale de Lausanne",
 
@@ -30,11 +30,11 @@ const alumniStudents = [
     researchTitle: "Geomechanical modelling of gas hydrate sediments",
     profileLink: "https://sites.google.com/view/sahilwani/",
     email: "shlwn76@gmail.com",
-    keywords: [
-      "Constitutive behaviour",
-      "Modelling of geo-materials",
-      "Boundary value problems",
-    ],
+    // keywords: [
+    //   "Constitutive behaviour",
+    //   "Modelling of geo-materials",
+    //   "Boundary value problems",
+    // ],
     affiliation: "Research Associate, Peking University",
     googleSchLink:
       "https://scholar.google.co.in/citations?user=JjfrZE8AAAAJ&hl=en",
